@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   root "pages#home" # sets home#index as the root route
-
   get '/about', to: 'pages#about' # creates a new route to map /about to home#about
+
+  get '/messages' => 'messages#index'
 
 end
